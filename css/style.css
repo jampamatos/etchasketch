@@ -1,0 +1,78 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+h1{
+    color:white;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: black;
+    width: fit-content;
+    padding: 30px;
+}
+
+#separator{
+    margin: 30px;
+    border: 5px solid #3e3d53;
+    border-radius: 50px;
+}
+
+#ui {
+    height: 60vh;
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    border: 5px solid #3e3d53;
+}
+
+#buttons-div,
+#canvas {
+    height: 100%;
+}  
+
+#canvas{
+    flex: 1 2 40vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.cell{
+    border: 1px solid #3e3d53;
+    text-align: center;
+}
+
+#buttons-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2 1 10vw;
+    background-color: #3e3d53;
+    padding: 0 20px;
+}
+
+#buttons-div button{
+    margin: 10px 5px;
+    padding: 20px;
+    background-color: #3F3F4E;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+#buttons-div button:hover{
+    background-color: #9897A9;
+}
